@@ -1,0 +1,62 @@
+---
+interface Props {
+  lang?: 'zh' | 'en';
+}
+
+const { lang = 'zh' } = Astro.props;
+const categories = lang === 'zh'
+  ? ['全部', '视频剪辑', '内容创作', 'AI 生成']
+  : ['All', 'Video Editing', 'Content Creation', 'AI Generated'];
+const categoryValues = ['all', 'video-editing', 'content-creation', 'aigc'];
+---
+
+<div class="flex gap-3 mb-8 flex-wrap">
+  {categories.map((cat, i) => (
+    <button
+      class="category-btn px-6 py-2 rounded-full transition-all duration-300"
+      class:list={[i === 0 ? 'bg-gray-900 text-white' : 'bg-gray-100 hover:bg-gray-200']}
+      data-category={categoryValues[i]}
+    >
+      {cat}
+    </button>
+  ))}
+</div>
+
+<style>
+  .work-card {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .work-card.hiding {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      const category = target.dataset.category;
+
+      document.querySelectorAll('.category-btn').forEach(b => {
+        b.classList.remove('bg-gray-900', 'text-white');
+        b.classList.add('bg-gray-100');
+      });
+      target.classList.add('bg-gray-900', 'text-white');
+      target.classList.remove('bg-gray-100');
+
+      document.querySelectorAll('.work-card').forEach(card => {
+        const cardCategory = (card as HTMLElement).dataset.category;
+        if (category === 'all' || cardCategory === category) {
+          (card as HTMLElement).classList.remove('hiding');
+          (card as HTMLElement).style.display = 'block';
+        } else {
+          (card as HTMLElement).classList.add('hiding');
+          setTimeout(() => {
+            (card as HTMLElement).style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+</script>

@@ -1,0 +1,146 @@
+{
+  "zh": {
+    "nav": {
+      "about": "关于我",
+      "portfolio": "作品集",
+      "contact": "联系我"
+    },
+    "home": {
+      "welcome": "唐佳琦",
+      "featured": "精选作品",
+      "intro": "新闻专业背景 × AI 技术实践者"
+    },
+    "about": {
+      "title": "关于我",
+      "description": "新闻学出身，AI公司实战历练。用AI技术赋能效率提升，用新闻叙事讲好故事，用个人技术为热爱产出。擅长将AIGC能力转化为可复用的工作流，让创意落地更快、更准、更有温度。",
+      "skills": "AIGC 创作 · 统筹运营 · 视频剪辑 · Prompt 工程",
+      "downloadCV": "下载简历"
+    },
+    "categories": {
+      "all": "全部",
+      "video": "视频剪辑",
+      "content": "内容创作/运营",
+      "ai": "AI 生成"
+    },
+    "works": {
+      "aiCharacter": "产品防水测试实验图",
+      "aigcLighting": "AI character consistency",
+      "aiShot": "AI character consistency",
+      "aiRing": "AIGC 产品实拍图_运动戒指",
+      "videoEditing": "AI video_banner",
+      "videoWork":"剪辑_脚本拍摄剪辑全流程",
+      "videoWorkk":"剪辑_aigc产品视频",
+      "videoIdol": "剪辑_安利产出向",
+      "videoIdoll":"运营_安利产出剪辑",
+      "videoSt":"运营_现场感情绪向产出",
+      "videoCampus":"AI_数字人+现场报道",
+      "contentFood":"运营_小红书美食探店",
+      "postVx":"内容_采写优秀校友",
+      "postVxx":"内容_编辑榜样人物采访稿",
+      "videoEditingDesc": "利用文生视频AI工具设计制作banner并在官网页面正式上线使用",
+      "videoWorkDesc":"熟练海外信息流剪辑，能够独立完成策划脚本实景拍摄后期剪辑全流程",
+      "videoWorkkDesc":"熟练海外信息流剪辑，熟悉AI生产视频画面，熟练使用tts、sync等功能",
+      "videoIdolDesc": "熟练素材积累-灵感落地-效果制作全流程",
+      "videoIdollDesc": "制作的安利产出类视频发表在视频号上，流量反响好",
+      "videoStDesc": "剪辑的比赛现场情绪向视频发表在运动员垂直类抖音账号上，流量反响好",
+      "videoCampusDesc": "利用AIGC工具生成数字主播和虚拟播报室，配合现场采访视频，剪辑制作出完整的新闻播报视频",
+      "contentFoodDesc":"垂直当地&校内美食探店，分享的推文长尾效应强，流量反响好",
+      "postVxDesc":"采访优秀校友并建立稳定联系网络，积累优质内容素材与传播资源,专业写作能力强",
+      "postVxxDesc":"统筹编辑榜样人物的采访稿件，发布后经南昌大学官号转载",
+      "newsReport": "内容创作案例",
+      "contentCreation": "内容创作案例",
+      "productDesign": "产品设计展示",
+      "promptView": "查看 Prompt"
+    },
+    "prompts": {
+      "aiCharacter": "极致写实，商业广告级质感，高动态范围，细节拉满。画面中心：收纳盒（参考图所示，形态比例不变，大小符合整体画面构成），金属支架承托，透明玻璃装置。视觉焦点：透明玻璃装置内，顶喷花洒倾泻而下的水柱形成清晰的水幕，撞击收纳盒瞬间迸发的水花四溅，水珠带晶莹高光，部分水珠呈拖尾动态模糊。环境：赛博朋克风极简卫浴实验室，透明玻璃装置，冷白与冰蓝色为主色调，光滑的浅灰色地面反射光线，背景的玻璃幕墙与金属构件带有细腻反光，远处仪器模糊处理营造空间纵深感。光影：冷峻的工业风布光，强光勾勒水珠与收纳盒轮廓，透明装置与背景形成明暗对比，整体画面通透、干净，科技感，主体突出，背景氛围烘托到位",
+      "aigcLighting": "保证人物形象，发色不变，去掉脸上贴纸和多余饰品，发型改为高马尾，改变背景：简约法式装修风格客厅，真实温馨有生活感；穿搭：浅蓝色瑜伽服套装，戴着头戴式耳机；动作自然松弛，整体营造居家运动美女氛围感，比例9:16",
+      "aiShot": "保证人物形象，发色不变，改变背景：简约西式浴室；穿搭：灰色宽松连帽卫衣，慵懒感，银色系质感戒指（简约设计）；动作自然松弛，氛围感光效，iPhone摄影感，整体营造帅哥氛围感，比例9:16",
+      "aiRing": "人物自拍视角：30岁左右白人年轻女性，高马尾束发（浅棕色头发）身穿淡蓝色简约运动装；背景：清晨的公园里 ， 阳光洒下暖金色光晕。动作：她一只手举着手机（伸向镜头），面朝镜头绽放明媚笑容，双眸闪烁着欢愉光芒，尽显俏皮自信的气质。另一只手手背朝向镜头，展示戒指（与参考图中戒指一致），注意不是第二视角图，是第一视角自拍图，比例 「9:16」"
+    },
+    "contact": {
+      "title": "联系我",
+      "name": "姓名",
+      "email": "邮箱",
+      "purpose": "联系目的",
+      "purposeJob": "工作联系",
+      "purposeVideo": "视频合作",
+      "purposeOther": "其他",
+      "message": "具体内容",
+      "submit": "发送消息",
+      "success": "消息已发送，我会尽快回复！"
+    }
+  },
+  "en": {
+    "nav": {
+      "about": "About",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "home": {
+      "welcome": "Hi! I am Jiaqi Tang",
+      "featured": "Featured Works",
+      "intro": "Journalism Background × AI Practitioner"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "With a background in journalism and hands-on experience in AI companies, I leverage AI technologies to enhance efficiency, craft compelling narratives through journalistic storytelling, and turn personal passion into tangible outputs. I specialize in transforming AIGC capabilities into reusable workflows, enabling ideas to be executed faster, more precisely, and with a human touch.",
+      "skills": "AIGC Creation · Operations Management · Video Editing · Prompt Engineering",
+      "downloadCV": "Download CV"
+    },
+    "categories": {
+      "all": "All",
+      "video": "Video Editing",
+      "content": "Content Creation / Operations",
+      "ai": "AI Generated"
+    },
+    "works": {
+      "aiCharacter": "Product Waterproof Testing Visual",
+      "aigcLighting": "AI character consistency",
+      "aiShot": "AI character consistency",
+      "aiRing": "AIGC Product Visual – Smart Ring",
+      "videoEditing": "AI video_banner",
+      "videoWork":"Video Editing – Full Pipeline (Concept to Production)",
+      "videoWorkk":"Video Editing – AIGC Product Video",
+      "videoIdol": "Video Editing – Fan Content Production",
+      "videoIdoll":"Operations – Fan Content Editing",
+      "videoSt":"Operations – Live Event Emotional Edits",
+      "videoCampus":"AI – Virtual Human + On-site Reporting",
+      "contentFood":"Operations – Food Exploration (Xiaohongshu)",
+      "postVx":"Content – Alumni Feature Writing",
+      "postVxx":"Content – Interview Editing (Role Model Features)",
+      "videoEditingDesc": "Designed and produced a banner using text-to-video AI tools, which was officially deployed on the website.",
+      "videoWorkDesc":"Experienced in overseas performance-driven video editing, capable of independently handling the full pipeline from concept scripting to on-site shooting and post-production.",
+      "videoWorkkDesc":"Proficient in overseas performance video editing and AI-generated visuals, with strong command of TTS and lip-sync tools.",
+      "videoIdolDesc": "Skilled in the full workflow from material collection to idea execution and final production.",
+      "videoIdollDesc": "Fan-oriented promotional videos published on WeChat Channels achieved strong traffic performance.",
+      "videoStDesc": "Emotion-driven sports event edits published on athlete-focused Douyin accounts with strong engagement.",
+      "videoCampusDesc": "Generated a virtual anchor and digital studio using AIGC tools, combined with on-site interview footage to produce a complete news broadcast video.",
+      "contentFoodDesc":"Focused on local and campus food exploration; content demonstrates strong long-tail traffic performance.",
+      "postVxDesc":"Interviewed outstanding alumni and built a stable network, accumulating high-quality content resources; strong professional writing skills.",
+      "postVxxDesc":"Led and edited interview articles on role models, later reposted by the official Nanchang University account.",
+      "newsReport": "Content Creation Case Studies",
+      "contentCreation": "Content Creation Case Studies",
+      "productDesign": "Product Design Showcase",
+      "promptView": "View Prompt"
+    },
+    "prompts": {
+      "aiCharacter": "Ultra-realistic, commercial-grade quality with high dynamic range and maximum detail. Center composition: a storage box (consistent with the reference image in shape and proportion), supported by a metal frame within a transparent glass apparatus. Visual focus: inside the glass enclosure, a top-mounted shower head pours down a continuous stream, forming a clear water curtain that strikes the box, creating dynamic splashes. Droplets feature crystalline highlights, with some rendered in motion-blur trails. Environment: a cyberpunk-inspired minimalist bathroom laboratory with transparent glass structures, dominated by cool white and icy blue tones. Smooth light-gray flooring reflects light, while glass walls and metallic elements in the background produce subtle reflections. Distant equipment is softly blurred to enhance depth. Lighting: cold industrial lighting setup, with strong highlights outlining water droplets and the product. Clear contrast between foreground and background creates a clean, high-tech visual with strong subject emphasis.",
+      "aigcLighting": "Preserve character identity and original hair color. Remove facial stickers and unnecessary accessories. Change hairstyle to a high ponytail. Background: a minimalist French-style living room with a warm, lived-in atmosphere. Outfit: light blue yoga set with over-ear headphones. Natural, relaxed posture. Overall mood: a home workout lifestyle aesthetic. Aspect ratio 9:16.",
+      "aiShot": "Preserve character identity and original hair color. Background: a minimalist Western-style bathroom. Outfit: a loose gray hoodie with a relaxed, effortless feel, paired with a minimal silver ring. Natural posture, atmospheric lighting, and iPhone-style photography. Overall mood: a cool, effortless male aesthetic. Aspect ratio 9:16.",
+      "aiRing": "Selfie perspective: a Caucasian woman in her early 30s with a high ponytail (light brown hair), wearing a minimal light blue athletic outfit. Background: a morning park with warm golden sunlight. Action: she holds her phone toward the camera, smiling brightly with lively eyes, expressing confidence and charm. Her other hand is raised with the back facing the camera, showcasing the ring (matching the reference image). Note: first-person selfie perspective (not second-person). Aspect ratio 9:16."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "name": "Name",
+      "email": "Email",
+      "purpose": "Purpose",
+      "purposeJob": "Job Opportunity",
+      "purposeVideo": "Video Collaboration",
+      "purposeOther": "Other",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent! I will reply soon!"
+    }
+  }
+}

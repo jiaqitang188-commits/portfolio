@@ -1,0 +1,18 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grad2)" opacity="0.1"/>
+  <text x="960" y="500" font-family="Arial, sans-serif" font-size="48" fill="#3b82f6" text-anchor="middle" font-weight="bold">
+    视频作品
+  </text>
+  <text x="960" y="580" font-family="Arial, sans-serif" font-size="28" fill="#64748b" text-anchor="middle">
+    16:9 横屏比例
+  </text>
+  <text x="960" y="640" font-family="Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">
+    请替换为实际视频文件
+  </text>
+</svg>

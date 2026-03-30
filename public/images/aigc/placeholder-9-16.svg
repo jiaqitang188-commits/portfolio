@@ -1,0 +1,18 @@
+<svg width="720" height="1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1280" fill="url(#grad1)" opacity="0.1"/>
+  <text x="360" y="600" font-family="Arial, sans-serif" font-size="36" fill="#a855f7" text-anchor="middle" font-weight="bold">
+    AIGC 作品
+  </text>
+  <text x="360" y="660" font-family="Arial, sans-serif" font-size="20" fill="#64748b" text-anchor="middle">
+    9:16 竖屏比例
+  </text>
+  <text x="360" y="700" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">
+    请替换为实际 AI 生成图片
+  </text>
+</svg>

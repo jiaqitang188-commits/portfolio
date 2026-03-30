@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import translations from '../../data/translations.json';
+import worksData from '../../data/works.json';
+
+export function getStaticPaths() {
+  return worksData.works.map(work => ({ params: { id: work.id } }));
+}
+
+const { id } = Astro.params;
+const work = worksData.works.find(w => w.id === id);
+
+// 如果有外链，直接重定向
+if (work?.externalLink) {
+  return Astro.redirect(work.externalLink);
+}
+
+const src = work?.src || '';
+const isVideo = src && /\.(mp4|webm|mov)$/i.test(src);
+const isImage = src && /\.(png|jpg|jpeg|gif|webp)$/i.test(src);
+---
+
+<Layout lang="zh">
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <a href="/" class="back-link text-gray-600 hover:text-gray-900 mb-6 inline-block">
+      ← 返回首页
+    </a>
+
+    <h1 class="text-4xl font-bold mb-8 work-title"></h1>
+
+    <p class="text-gray-700 mb-8 leading-relaxed work-description" style="display:none;"></p>
+
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
+      {isVideo && (
+        <video src={src} controls class="w-full aspect-video bg-gray-100">
+          Your browser does not support the video tag.
+        </video>
+      )}
+      {isImage && (
+        <img src={src} alt="" class="w-full object-contain bg-gray-100" />
+      )}
+      {!src && (
+        <div class="w-full aspect-video bg-gray-100 flex items-center justify-center text-gray-400">
+          <span class="text-4xl">🎬</span>
+        </div>
+      )}
+    </div>
+
+    <div class="work-prompt bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border-2 border-purple-200" style="display:none;">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-purple-600">✨</span>
+        <h2 class="text-lg font-semibold text-purple-900">Prompt</h2>
+      </div>
+      <p class="text-gray-700 leading-relaxed font-mono text-sm work-prompt-text"></p>
+    </div>
+  </div>
+
+  <script define:vars={{ work, translations }}>
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang') || 'zh';
+    const t = translations[lang];
+
+    const title = work?.titleKey ? t.works[work.titleKey] : '';
+    const description = work?.descriptionKey ? t.works[work.descriptionKey] : '';
+    const prompt = work?.promptKey ? t.prompts[work.promptKey] : '';
+
+    document.querySelector('.work-title').textContent = title;
+    document.querySelector('.back-link').textContent = lang === 'zh' ? '← 返回首页' : '← Back to Home';
+    document.querySelector('.back-link').href = lang === 'zh' ? '/' : '/en';
+
+    if (description) {
+      document.querySelector('.work-description').textContent = description;
+      document.querySelector('.work-description').style.display = 'block';
+    }
+
+    if (prompt) {
+      document.querySelector('.work-prompt-text').textContent = prompt;
+      document.querySelector('.work-prompt').style.display = 'block';
+    }
+  </script>
+</Layout>
