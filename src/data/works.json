@@ -4,7 +4,7 @@
       "id": "ai-character",
       "category": "aigc",
       "ratio": "9:16",
-      "src": "/images/aigc/waterprooftest.png",
+      "src": "./images/aigc/waterprooftest.png",
       "titleKey": "aiCharacter",
       "promptKey": "aiCharacter"
     },
@@ -12,7 +12,7 @@
       "id": "aigc-lighting",
       "category": "aigc",
       "ratio": "9:16",
-      "src": "/images/aigc/y2kgirl.png",
+      "src": "./images/aigc/y2kgirl.png",
       "titleKey": "aigcLighting",
       "promptKey": "aigcLighting"
     },
@@ -20,7 +20,7 @@
       "id": "aigc-shot",
       "category": "aigc",
       "ratio": "9:16",
-      "src": "/images/aigc/shotboy.png",
+      "src": "./images/aigc/shotboy.png",
       "titleKey": "aiShot",
       "promptKey": "aiShot"
     },
@@ -28,7 +28,7 @@
       "id": "aigc-ring",
       "category": "aigc",
       "ratio": "9:16",
-      "src": "/images/aigc/realring.png",
+      "src": "./images/aigc/realring.png",
       "titleKey": "aiRing",
       "promptKey": "aiRing"
     },
@@ -36,7 +36,7 @@
       "id": "video-editing",
       "category": "aigc",
       "ratio": "16:9",
-      "src": "/video/AIGC/banner.mp4",
+      "src": "./video/AIGC/banner.mp4",
       "titleKey": "videoEditing",
       "descriptionKey": "videoEditingDesc"
     },
@@ -44,8 +44,8 @@
       "id": "video-work",
       "category": "video-editing",
       "ratio": "9:16",
-      "src": "/video/works/3in1.mp4",
-      "poster":"/images/works/3in1cover.png",
+      "src": "./video/works/3in1.mp4",
+      "poster":"./images/works/3in1cover.png",
       "titleKey": "videoWork",
       "descriptionKey": "videoWorkDesc"
     },
@@ -53,7 +53,7 @@
       "id": "video-workk",
       "category": "video-editing",
       "ratio": "9:16",
-      "src": "/video/works/aigcwork.mp4",
+      "src": "./video/works/aigcwork.mp4",
       "titleKey": "videoWorkk",
       "descriptionKey": "videoWorkkDesc"
     },
@@ -61,8 +61,8 @@
       "id": "video-idol",
       "category": "video-editing",
       "ratio": "9:16",
-      "src": "/video/idol/zhr1.mp4",
-      "poster":"/images/works/zhr1cover.jpg",
+      "src": "./video/idol/zhr1.mp4",
+      "poster":"./images/works/zhr1cover.jpg",
       "titleKey": "videoIdol",
       "descriptionKey": "videoIdolDesc"
     },
@@ -70,7 +70,7 @@
       "id": "video-idoll",
       "category": "content-creation",
       "ratio": "9:16",
-      "poster":"/images/works/zhr2cover.jpg",
+      "poster":"./images/works/zhr2cover.jpg",
       "titleKey": "videoIdoll",
       "descriptionKey": "videoIdollDesc",
       "externalLink": "https://weixin.qq.com/sph/ApUxPHSEx"
@@ -79,7 +79,7 @@
       "id": "video-st",
       "category": "content-creation",
       "ratio": "9:16",
-      "poster":"/images/works/st1cover.jpg",
+      "poster":"./images/works/st1cover.jpg",
       "titleKey": "videoSt",
       "descriptionKey": "videoStDesc",
       "externalLink": "https://v.douyin.com/-Gkh1ZHZydQ/"
@@ -88,7 +88,7 @@
       "id": "video-campus",
       "category": "aigc",
       "ratio": "16:9",
-      "src": "/video/AIGC/live.mp4",
+      "src": "./video/AIGC/live.mp4",
       "titleKey": "videoCampus",
       "descriptionKey": "videoCampusDesc"
     },
@@ -96,7 +96,7 @@
       "id": "content-food",
       "category": "content-creation",
       "ratio": "9:16",
-      "poster":"/images/works/red1cover.jpg",
+      "poster":"./images/works/red1cover.jpg",
       "titleKey": "contentFood",
       "descriptionKey": "contentFoodDesc",
       "externalLink": "http://xhslink.com/o/2CpNo212Mv6"
@@ -105,7 +105,7 @@
       "id": "post-vxx",
       "category": "content-creation",
       "ratio": "9:16",
-      "poster":"/images/works/vx2cover.jpg",
+      "poster":"./images/works/vx2cover.jpg",
       "titleKey": "postVxx",
       "descriptionKey": "postVxxDesc",
       "externalLink":"https://mp.weixin.qq.com/s/X6RunAgPC3aOYGYXp381wQ?scene=1"
@@ -114,7 +114,7 @@
       "id": "post-vx",
       "category": "content-creation",
       "ratio": "9:16",
-      "poster":"/images/works/vx1cover.jpg",
+      "poster":"./images/works/vx1cover.jpg",
       "titleKey": "postVx",
       "descriptionKey": "postVxDesc",
       "externalLink":"https://mp.weixin.qq.com/s/mkTcaBepHqFZEPqne4AhbQ?scene=1&click_id=18"
