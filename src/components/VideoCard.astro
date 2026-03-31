@@ -18,11 +18,11 @@ interface Props {
 const { title, ratio = '16:9', src, poster, link, workId, prompt, description, category, lang = 'zh', externalLink } = Astro.props;
 const t = lang === 'zh' ? translations.zh : translations.en;
 const aspectClass = ratio === '9:16' ? 'aspect-[9/16]' : 'aspect-[16/9]';
-const detailLink = externalLink || (workId ? `/work/${workId}?lang=${lang}` : link);
+const detailLink = externalLink || (workId ? `${import.meta.env.BASE_URL}/work/${workId}?lang=${lang}` : link);
 const isExternal = !!externalLink;
 
 // 默认图片路径：AIGC 作品从 /images/aigc/ 读取，其他从 /images/works/ 读取
-const defaultSrc = workId ? (category === 'aigc' ? `/images/aigc/${workId}` : `/images/works/${workId}`) : undefined;
+const defaultSrc = workId ? (category === 'aigc' ? `${import.meta.env.BASE_URL}/images/aigc/${workId}` : `${import.meta.env.BASE_URL}/images/works/${workId}`) : '';
 const finalSrc = src || poster || defaultSrc;
 
 // 检测文件类型：根据扩展名判断是图片还是视频
