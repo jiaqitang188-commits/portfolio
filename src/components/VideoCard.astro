@@ -19,7 +19,7 @@ const { title, ratio = '16:9', src, poster, link, workId, prompt, description, c
 const t = lang === 'zh' ? translations.zh : translations.en;
 const aspectClass = ratio === '9:16' ? 'aspect-[9/16]' : 'aspect-[16/9]';
 const baseUrl = import.meta.env.BASE_URL;
-const detailLink = externalLink || (workId ? `${import.meta.env.BASE_URL}/work/${workId}?lang=${lang}` : link);
+const detailLink = externalLink || (workId ? `${import.meta.env.BASE_URL}work/${workId}?lang=${lang}` : link);
 const isExternal = !!externalLink;
 
 // 直接使用原始路径，Astro 会自动处理
