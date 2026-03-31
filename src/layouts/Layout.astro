@@ -24,7 +24,7 @@ const t = translations[lang];
         <a href="#about" class="hover:opacity-70">{t.nav.about}</a>
         <a href="#portfolio" class="hover:opacity-70">{t.nav.portfolio}</a>
         <a href="#contact" class="hover:opacity-70">{t.nav.contact}</a>
-        <a href="/Resume_tjq.pdf" download class="hover:opacity-70" aria-label={t.about.downloadCV}>
+        <a href={`${import.meta.env.BASE_URL}Resume_tjq.pdf`} download class="hover:opacity-70" aria-label={t.about.downloadCV}>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
         </a>
         <button id="lang-toggle" class="text-sm px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200">
@@ -36,10 +36,10 @@ const t = translations[lang];
   <main class="pt-20">
     <slot />
   </main>
-  <script>
+  <script define:vars={{ baseUrl: import.meta.env.BASE_URL }}>
     document.getElementById('lang-toggle')?.addEventListener('click', () => {
       const currentLang = document.documentElement.lang;
-      window.location.href = currentLang === 'zh' ? '/en' : '/';
+      window.location.href = currentLang === 'zh' ? `${baseUrl}en` : baseUrl;
     });
   </script>
 </body>
