@@ -15,7 +15,9 @@ if (work?.externalLink) {
   return Astro.redirect(work.externalLink);
 }
 
-const src = work?.src || '';
+const baseUrl = import.meta.env.BASE_URL;
+const src = work?.src ? `${baseUrl}${work.src.replace(/^\.\//, '')}` : '';
+const poster = work?.poster ? `${baseUrl}${work.poster.replace(/^\.\//, '')}` : '';
 const isVideo = src && /\.(mp4|webm|mov)$/i.test(src);
 const isImage = src && /\.(png|jpg|jpeg|gif|webp)$/i.test(src);
 ---
@@ -32,7 +34,7 @@ const isImage = src && /\.(png|jpg|jpeg|gif|webp)$/i.test(src);
 
     <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
       {isVideo && (
-        <video src={src} controls class="w-full aspect-video bg-gray-100">
+        <video src={src} poster={poster} controls class="w-full aspect-video bg-gray-100">
           Your browser does not support the video tag.
         </video>
       )}
