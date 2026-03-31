@@ -19,12 +19,11 @@ const { title, ratio = '16:9', src, poster, link, workId, prompt, description, c
 const t = lang === 'zh' ? translations.zh : translations.en;
 const aspectClass = ratio === '9:16' ? 'aspect-[9/16]' : 'aspect-[16/9]';
 const baseUrl = import.meta.env.BASE_URL;
-const detailLink = externalLink || (workId ? `${baseUrl}work/${workId}?lang=${lang}` : link);
+const detailLink = externalLink || (workId ? `${import.meta.env.BASE_URL}/work/${workId}?lang=${lang}` : link);
 const isExternal = !!externalLink;
 
-// 处理路径：移除 ./ 前缀并添加 baseUrl
-const processSrc = (path?: string) => path ? `${baseUrl}${path.replace(/^\.\//, '')}` : '';
-const finalSrc = processSrc(src) || processSrc(poster) || '';
+// 直接使用原始路径，Astro 会自动处理
+const finalSrc = src || poster || '';
 
 // 检测文件类型：根据扩展名判断是图片还是视频
 const isVideo = src && /\.(mp4|webm|mov)$/i.test(src);
@@ -36,8 +35,8 @@ const isImage = finalSrc && /\.(png|jpg|jpeg|gif|webp)$/i.test(finalSrc);
     <div class={`${aspectClass} bg-gray-100 relative overflow-hidden`}>
       {isVideo && (
         <video
-          src={processSrc(src)}
-          poster={processSrc(poster)}
+          src={src}
+          poster={poster}
           class="w-full h-full object-cover pointer-events-none group-hover:scale-105 transition-transform duration-300"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
         />

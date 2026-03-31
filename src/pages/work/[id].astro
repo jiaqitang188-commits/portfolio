@@ -15,9 +15,8 @@ if (work?.externalLink) {
   return Astro.redirect(work.externalLink);
 }
 
-const baseUrl = import.meta.env.BASE_URL;
-const src = work?.src ? `${baseUrl}${work.src.replace(/^\.\//, '')}` : '';
-const poster = work?.poster ? `${baseUrl}${work.poster.replace(/^\.\//, '')}` : '';
+const src = work?.src || '';
+const poster = work?.poster || '';
 const isVideo = src && /\.(mp4|webm|mov)$/i.test(src);
 const isImage = src && /\.(png|jpg|jpeg|gif|webp)$/i.test(src);
 ---
