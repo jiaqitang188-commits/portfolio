@@ -4,7 +4,7 @@
       "id": "ai-character",
       "category": "aigc",
       "ratio": "9:16",
-      "src": "/images/aigc/waterprooftest.png",
+      "src": "/portfolio/images/aigc/waterprooftest.png",
       "titleKey": "aiCharacter",
       "promptKey": "aiCharacter"
     },

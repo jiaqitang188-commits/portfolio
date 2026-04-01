@@ -22,10 +22,8 @@ const baseUrl = import.meta.env.BASE_URL;
 const detailLink = externalLink || (workId ? `${baseUrl}work/${workId}?lang=${lang}` : link);
 const isExternal = !!externalLink;
 
-// 统一处理路径：添加 BASE_URL 前缀
-const finalSrc = src ? `${baseUrl}${src.replace(/^\//, '')}` : (poster ? `${baseUrl}${poster.replace(/^\//, '')}` : '');
-const finalPoster = poster ? `${baseUrl}${poster.replace(/^\//, '')}` : '';
-const videoSrc = src ? `${baseUrl}${src.replace(/^\//, '')}` : '';
+// 直接使用原始路径
+const finalSrc = src || poster || '';
 
 // 检测文件类型
 const isVideo = src && /\.(mp4|webm|mov)$/i.test(src);
@@ -37,8 +35,8 @@ const isImage = finalSrc && /\.(png|jpg|jpeg|gif|webp)$/i.test(finalSrc);
     <div class={`${aspectClass} bg-gray-100 relative overflow-hidden`}>
       {isVideo && (
         <video
-          src={videoSrc}
-          poster={finalPoster}
+          src={src}
+          poster={poster}
           class="w-full h-full object-cover pointer-events-none group-hover:scale-105 transition-transform duration-300"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
         />
