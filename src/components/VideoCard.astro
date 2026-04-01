@@ -18,8 +18,7 @@ interface Props {
 const { title, ratio = '16:9', src, poster, link, workId, prompt, description, category, lang = 'zh', externalLink } = Astro.props;
 const t = lang === 'zh' ? translations.zh : translations.en;
 const aspectClass = ratio === '9:16' ? 'aspect-[9/16]' : 'aspect-[16/9]';
-const baseUrl = import.meta.env.BASE_URL;
-const detailLink = externalLink || (workId ? `${baseUrl}work/${workId}?lang=${lang}` : link);
+const detailLink = externalLink || (workId ? `/portfolio/work/${workId}?lang=${lang}` : link);
 const isExternal = !!externalLink;
 
 // 直接使用原始路径

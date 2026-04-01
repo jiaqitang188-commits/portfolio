@@ -39,7 +39,7 @@ const t = translations[lang];
   <script define:vars={{ baseUrl: import.meta.env.BASE_URL }}>
     document.getElementById('lang-toggle')?.addEventListener('click', () => {
       const currentLang = document.documentElement.lang;
-      window.location.href = currentLang === 'zh' ? `${baseUrl}en` : baseUrl;
+      window.location.href = currentLang === 'zh' ? '/portfolio/en' : '/portfolio/';
     });
   </script>
 </body>
