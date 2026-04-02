@@ -5,7 +5,9 @@
       "Bash(ls:*)",
       "Bash(npm run:*)",
       "Bash(sed -i 's|\"\"/images/|\"\"/portfolio/images/|g' src/data/works.json)",
-      "Bash(sed -i 's|\"\"/video/|\"\"/portfolio/video/|g' src/data/works.json)"
+      "Bash(sed -i 's|\"\"/video/|\"\"/portfolio/video/|g' src/data/works.json)",
+      "Bash(sed -i 's|\"\"./images/|\"\"/portfolio/images/|g' src/data/works.json)",
+      "Bash(sed -i 's|\"\"./video/|\"\"/portfolio/video/|g' src/data/works.json)"
     ]
   }
 }
